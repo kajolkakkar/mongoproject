@@ -3,13 +3,10 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-
+# Database Connection
 import pymongo
-
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-
 mydb = myclient["mydatabase"]
-
 col = mydb["Users"]
 
 
